@@ -1,6 +1,10 @@
 hash-format = "sha256"
 
 [[files]]
+file = "config/Geyser-Fabric/config.yml"
+hash = "22170b1cc7b664670edf8fe0f6856d773ca192c80c93555b90f65de8ced5938c"
+
+[[files]]
 file = "mods/c2me-fabric.pw.toml"
 hash = "21d83b437d13e672c12f4760320c0b487ab8fbc6bd5f5a4a051ef54a44ebea21"
 metafile = true
@@ -33,6 +37,16 @@ metafile = true
 [[files]]
 file = "mods/ferrite-core.pw.toml"
 hash = "069d81cab53c0141459ad4d70bcf3e10f17652f24cc62d3b4a0fc2cd2b700871"
+metafile = true
+
+[[files]]
+file = "mods/floodgate.pw.toml"
+hash = "8f2df04d5d7caa0af5ef817bd9b0aa7614dc9aa5c120805728931ebbc7807bc3"
+metafile = true
+
+[[files]]
+file = "mods/geyser.pw.toml"
+hash = "3141935d7272909e641532edffe4821f203bc9040fa933e9f8ad4738a484e3d7"
 metafile = true
 
 [[files]]

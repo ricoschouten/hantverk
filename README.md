@@ -20,8 +20,14 @@ Performance first. Every mod is pinned in `mods/`.
 | ScalableLux | both | Fast, multithreaded lighting engine |
 | FerriteCore | both | Reduces memory usage |
 | Krypton | both | Network stack optimizations |
+| Geyser | server | Lets Bedrock Edition clients join (UDP port 19132) |
+| Floodgate | server | Bedrock players join with their Xbox account, no Java account needed |
 | spark | both | Profiler: `/spark profiler` to find lag |
 | Fabric API, Cloth Config | both | Libraries |
+
+Bedrock players connect to the server's address on **UDP port 19132**. Open or forward that port next to TCP 25565.
+Geyser's config is managed in `config/Geyser-Fabric/config.yml` (`auth-type: floodgate`).
+Floodgate's `key.pem` is generated per server in `server-data/`. Never commit it.
 
 Not yet included: ModernFix (no 26.3 release yet).
 
