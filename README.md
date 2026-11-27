@@ -31,6 +31,14 @@ Floodgate's `key.pem` is generated per server in `server-data/`. Never commit it
 
 Not yet included: ModernFix (no 26.3 release yet).
 
+## Install (players)
+
+In Prism Launcher choose **Add Instance → Import** and paste:
+
+```
+https://github.com/ricoschouten/hantverk/releases/latest/download/hantverk.mrpack
+```
+
 ## Setup
 
 Tools come from the Nix flake, with versions pinned in `flake.lock`:

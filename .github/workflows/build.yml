@@ -28,7 +28,7 @@ jobs:
       - name: Export .mrpack
         run: |
           mkdir -p dist
-          nix develop -c packwiz modrinth export -o "dist/hantverk-${GITHUB_REF_NAME//\//-}.mrpack"
+          nix develop -c packwiz modrinth export -o dist/hantverk.mrpack
 
       - uses: actions/upload-artifact@v7
         with:
