@@ -86,6 +86,11 @@
                 --bootstrap-no-update --no-gui --side server \
                 "file://$root/pack.toml"
 
+              # Server-only files tracked in the repo (whitelist, ops, ...) override what's in server-data.
+              if [ -d "$root/server" ]; then
+                cp -R "$root/server/." "$data/"
+              fi
+
               if [ "$#" -eq 0 ]; then set -- -Xms4G -Xmx4G; fi
               exec ${pkgs.lib.getExe fabricServer} "$@"
             '';

@@ -73,6 +73,11 @@ It reads the Minecraft and Fabric versions from `pack.toml` and syncs the workin
 Running it accepts the Minecraft EULA (https://aka.ms/MinecraftEULA) by writing `eula.txt`.
 Set `HANTVERK_SERVER_DIR` to use a different data directory.
 
+Server-only files live in `server/` (e.g. `whitelist.json`, `ops.json`, `server.properties`).
+They're copied over `server-data/` on every start, so the repo is the source of truth. Changes made in-game,
+such as `/whitelist add`, are overwritten on the next start unless you copy them back into `server/` and commit.
+This folder is public, so anything in it (player names and UUIDs) is visible to anyone.
+
 ## Releases
 
 Push a tag like `v0.1.0`. CI checks the index, builds the `.mrpack` and attaches it to a GitHub release.
