@@ -7,3 +7,4 @@ flake.lock
 dist/
 result
 **/.gitkeep
+server-data/

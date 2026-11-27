@@ -27,11 +27,23 @@ Mod configs go in `config/`. Run `packwiz refresh` afterwards so they get indexe
 
 ## Testing
 
+Client: export the pack and import the `.mrpack` into Prism Launcher.
+
 ```sh
 nix develop -c packwiz modrinth export
 ```
 
-Import the `.mrpack` into Prism Launcher. For a server, point [packwiz-installer](https://packwiz.infra.link/tutorials/installing/packwiz-installer/) at a `packwiz serve` URL or at the hosted pack below.
+Server: run a local Fabric server built with [nix-minecraft](https://github.com/Infinidoge/nix-minecraft):
+
+```sh
+nix run .#server                    # defaults to -Xms4G -Xmx4G
+nix run .#server -- -Xmx8G          # custom JVM args
+```
+
+It reads the Minecraft and Fabric versions from `pack.toml` and syncs the working-tree pack into
+`server-data/` with packwiz-installer (server-side mods only). Then it starts the server on port 25565.
+Running it accepts the Minecraft EULA (https://aka.ms/MinecraftEULA) by writing `eula.txt`.
+Set `HANTVERK_SERVER_DIR` to use a different data directory.
 
 ## Releases
 

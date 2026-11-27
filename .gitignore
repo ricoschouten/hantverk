@@ -5,3 +5,6 @@
 result
 
 .DS_Store
+
+# Local test server data
+/server-data/
