@@ -3,6 +3,27 @@
 A Fabric modpack for Minecraft 26.3, managed with [packwiz](https://github.com/packwiz/packwiz).
 Every mod is pinned by URL and hash, so a given commit always produces the same pack.
 
+## Mods
+
+Performance first. Every mod is pinned in `mods/`.
+
+| Mod | Side | Purpose |
+|---|---|---|
+| Sodium | client | Rendering engine rewrite |
+| ImmediatelyFast | client | Faster immediate-mode rendering (HUD, text, entities) |
+| Entity Culling | client | Skips rendering hidden entities and block entities |
+| More Culling | client | Extra block and face culling |
+| Dynamic FPS | client | Lowers FPS when the game is unfocused or idle |
+| Lithium | both | Game logic, AI, and tick optimizations |
+| C2ME | both | Parallel chunk generation, loading, and saving |
+| ScalableLux | both | Fast, multithreaded lighting engine |
+| FerriteCore | both | Reduces memory usage |
+| Krypton | both | Network stack optimizations |
+| spark | both | Profiler: `/spark profiler` to find lag |
+| Fabric API, Cloth Config | both | Libraries |
+
+Not yet included: ModernFix (no 26.3 release yet).
+
 ## Setup
 
 Tools come from the Nix flake, with versions pinned in `flake.lock`:
