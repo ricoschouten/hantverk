@@ -1,0 +1,4 @@
+# Pin tool versions: run `mise install` to get the same packwiz everyone uses.
+[tools]
+go = "1.27"
+"go:github.com/packwiz/packwiz" = "v0.0.0-20261014010756-170b22d78595"

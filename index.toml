@@ -1,0 +1,6 @@
+hash-format = "sha256"
+
+[[files]]
+file = "mods/fabric-api.pw.toml"
+hash = "d8561ff9c3bd2eeb7bb8121241f126c33725734719dcb4973bedeb97750260f8"
+metafile = true

@@ -1,0 +1,9 @@
+# Build outputs
+*.mrpack
+*.zip
+/dist/
+
+# Local test server data
+/server-data/
+
+.DS_Store

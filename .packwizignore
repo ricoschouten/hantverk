@@ -1,0 +1,9 @@
+# Repo files that are not part of the pack
+README.md
+LICENSE
+mise.toml
+docker-compose.yml
+.github/
+server-data/
+dist/
+**/.gitkeep
