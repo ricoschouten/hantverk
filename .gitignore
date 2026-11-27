@@ -2,8 +2,6 @@
 *.mrpack
 *.zip
 /dist/
-
-# Local test server data
-/server-data/
+result
 
 .DS_Store

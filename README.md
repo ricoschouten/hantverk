@@ -5,8 +5,11 @@ Every mod is pinned by URL and hash, so a given commit always produces the same 
 
 ## Setup
 
+Tools come from the Nix flake, with versions pinned in `flake.lock`:
+
 ```sh
-mise install          # installs the pinned packwiz (or: go install github.com/packwiz/packwiz@<version in mise.toml>)
+nix develop           # shell with packwiz on PATH
+nix flake update      # deliberately bump the toolchain
 ```
 
 ## Common tasks
@@ -25,11 +28,10 @@ Mod configs go in `config/`. Run `packwiz refresh` afterwards so they get indexe
 ## Testing
 
 ```sh
-packwiz serve                   # terminal 1: serve the pack on :8080
-docker compose up               # terminal 2: Fabric server that syncs from it
+nix develop -c packwiz modrinth export
 ```
 
-On the client, import the exported `.mrpack` into Prism Launcher.
+Import the `.mrpack` into Prism Launcher. For a server, point [packwiz-installer](https://packwiz.infra.link/tutorials/installing/packwiz-installer/) at a `packwiz serve` URL or at the hosted pack below.
 
 ## Releases
 
