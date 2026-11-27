@@ -102,6 +102,6 @@
         }
       );
 
-      formatter = forAllSystems (pkgs: _: pkgs.nixfmt-rfc-style);
+      formatter = forAllSystems (pkgs: _: pkgs.nixfmt);
     };
 }
