@@ -1,12 +1,12 @@
 name = "hantverk"
 author = "ricoschouten"
-version = "0.2.0"
+version = "0.3.0"
 pack-format = "packwiz:1.1.0"
 
 [index]
 file = "index.toml"
 hash-format = "sha256"
-hash = "d039e7549c9f1bc980a5579eeea30aaaa9060c679f45ce0a28c87c9e5707cb88"
+hash = "3add9e39de022ea5425864748c9bd742103064eeebbb1c87e8836a1be5b478ea"
 
 [versions]
 fabric = "0.20.1"

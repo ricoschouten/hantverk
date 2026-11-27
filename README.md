@@ -14,6 +14,7 @@ Performance first. Every mod is pinned in `mods/`.
 | Entity Culling | client | Skips rendering hidden entities and block entities |
 | More Culling | client | Extra block and face culling |
 | Dynamic FPS | client | Lowers FPS when the game is unfocused or idle |
+| Distant Horizons | both | Far render distance via LODs; the server can pre-generate and send LODs to players |
 | Lithium | both | Game logic, AI, and tick optimizations |
 | C2ME | both | Parallel chunk generation, loading, and saving |
 | ScalableLux | both | Fast, multithreaded lighting engine |
